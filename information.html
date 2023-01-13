@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แผนกเทคโนโลยีสารสนเทศ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Athiti', sans-serif;
+        }
+        .container {
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+
+        /*-----   Nav Section  -----*/
+        nav {
+        background-color:#996633;
+        color: #fff;
+        height: 80px;
+    }
+    .nav-con {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        align-items: center;
+    }
+    .menu li{
+        list-style: none;
+        background-color: #996633;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-size: 1.1em;
+        line-height: 40px;
+        text-align: left;
+    }
+    .menu a{
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        padding-left: 15px;
+        border-bottom: 1px solid #888;
+        transition: .3s;
+    }
+    .menu a:hover{
+        background-color: #CC9966;
+    }
+    .menu li ul{
+        font-size: .8em;
+    }
+    
+    @media screen and  (min-width: 650px) {
+        .menu li {
+            width:  130px;
+            border-bottom: none;
+            height: 50px;
+            line-height: 50px;
+            font-size: 0.px;
+            display: inline-block;
+            margin-right: -4px;
+        }
+        .menu a {
+            border-bottom: none;
+        }
+        .menu >  li {
+            text-align: center;
+        }
+        .menu > li > a{
+            padding-left: 0;
+        }
+        .menu li ul {
+            position: absolute;
+            display: none;
+            width: inherit;
+        }
+        .menu li:hover ul{
+            display: block;
+        }
+        .menu li ul li {
+            display: block;
+        }
+
+    }
+    
+    
+    /*-----   Nav Section  -----*/
+
+    /*-----   Banner Section  -----*/
+
+.banner {
+    height: 300px;
+    background-image:url('https://scontent.furt3-1.fna.fbcdn.net/v/t1.15752-9/319635852_668563518088852_7963072940066248135_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHCjpzZ3XusS3MLx4q9Ed1U8ROOE5w4twrxE44TnDi3ChS2WpT2U-uChcf-kjZ63INBvVQ9Q09TXzT1DHY41Qi1&_nc_ohc=WbYIEkYEyXIAX-NGZea&_nc_ht=scontent.furt3-1.fna&oh=03_AdRH-mHBDI_94BtY3NdkI78DyVnn8W82txr1t16HgMS-sQ&oe=63C144A4') ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+.banner-info h1{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+    /*-----   Banner Section  -----*/
+
+    /*-----   Blog Section  -----*/
+
+.blog {
+    background-color: #fff;
+    height: auto;
+    padding: 2rem 0;
+}
+.blog-posts {
+    margin:  2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+.blog-posts img {
+    width: 100%;
+    border-bottom: 15px solid #996633;
+}
+.blog-posts h3 {
+    color: #000;
+    margin: .5rem 0;
+}
+.blog-posts p {
+    color: #696969;
+    line-height: 25px;
+}
+
+    /*-----   Blog Section  -----*/
+
+    /*-----   CTA Section  -----*/
+
+.cta {
+    height: 300px;
+    background: #B22222;
+    background: url("https://scontent.furt3-1.fna.fbcdn.net/v/t1.15752-9/318508376_515615317207136_4145027201244452712_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeEZM1tvlxUuDcd7dPmgVcPlwldD80l2fu3CV0PzSXZ-7dCPhQvnCaoqs-nwoTOeFtvhFGfhw4X5zUY0BCuLdgaT&_nc_ohc=URdCoMOmOKIAX9-UZv8&_nc_ht=scontent.furt3-1.fna&oh=03_AdS_4cbgCY5g5VbVoDE3CZjeM2dLLUnMvpUVHLW9XkRIMQ&oe=63C16BFF");
+    background-size: cover;
+    background-position: center;
+    
+}
+.cta-con {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    align-items: center;
+}
+.cta-title{
+    font-size: 1.3rem;
+    color: #000 ;
+}
+
+
+    /*-----   CTA Section  -----*/
+
+    /*-----   Services  Section  -----*/
+
+.services {
+    background-color: #d2bd93;
+    height: auto;
+    padding: 2rem 0;
+
+}
+.services-title{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+}
+.services-con {
+    margin:  2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+.services-con img {
+    width: 100%;
+    border-bottom: 15px solid #B22222;
+}
+.services-con p {
+    color: #8B7D6B;
+    line-height: 25px;
+}
+    /*-----   Services  Section  -----*/
+
+    /*-----   Pricing  Section  -----*/
+.pricing {
+    background: #fff;
+    height: auto;
+    padding: 5rem 0;
+}
+.pricing-title{
+    text-align: center;
+}
+.pricing-title h3 {
+    font-size: 3rem;
+    color: #000 ;
+    
+}
+.pricing-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    color: #696969;
+    text-align: center;
+}
+.pricing-info i {
+    font-size: 2.5rem;
+    color: #CD853F;
+}
+.pricing-info h3 {
+    font-size: 1.5rem;
+    color: #000;
+}
+.pricing-info h4 {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+.pricing-btn {
+    background: #B8860B;
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    margin-top: 2rem;
+    border-radius: 50px;
+}
+    /*-----   Pricing  Section  -----*/
+
+    /*-----   Footer  Section  -----*/
+footer {
+    height: auto;
+    background-color: #B22222;
+}
+.footer-con {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #fff;
+}
+.footer-items ul {
+    list-style: none;
+}
+.footer-items h3 {
+    margin-bottom: 2rem;
+}
+.footer-items ul li {
+    margin:  1.5rem 0;
+}
+.footer-items img {
+    width: 35%;
+    
+}
+    /*-----   Footer  Section  -----*/
+    </style>
+</head>
+<body>
+    <!--    Nav Section     -->
+    <nav>
+        <div class="container">
+            <div class="nav-con">
+                <div class="logo"></div>
+                    <h3>Information Technology</h3>
+                <ul class="menu">
+                    <li><a href="information.html">หน้าแรก</a></li>
+                    <li><a href="personnel.html">บุคลากร</a></li>
+                    <li><a href="#">หลักสูตร</a>
+                        <ul>
+                            <li><a href="#">หลักสูตรชั้น ปวช.</a></li>
+                            <li><a href="#">หลักสูตรชั้น ปวส.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="activity.html">กิจกรรม</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--    Nav Section     -->
+
+    <!--    Banner Section     -->
+    <section class="banner">
+        <section class="banner-info">
+            <h1>แผนกเทคโนโลยีสารสนเทศ</h1>
+        </section>
+    </section>
+    <!--    Banner Section     -->
+
+    <!--    Blog Section     -->
+    <section class="blog">
+        <div class="container">
+            <div class="blog-con">
+                <div class="blog-title"></div>
+                <div class="blog-posts">
+                    <div class="blog-post">
+                        <img src="https://scontent.furt3-1.fna.fbcdn.net/v/t1.15752-9/314423224_713063896754550_8408539838887228441_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeEM7osUmnvsGTIY6hgeNobQOGDvBqDWMbk4YO8GoNYxudmjw8_ZJxvHOWPF-oukcAiyEZEgVLHqx-dkN2UsOZyi&_nc_ohc=5WlBCMYpMd8AX__6AOD&_nc_ht=scontent.furt3-1.fna&oh=03_AdQcOkkBPoxbhPzTUBsV6Vp2sliPJ0GgDn-ZJd5_ls_03A&oe=63C13431" alt="">
+                        <h3>การแข่งขันทักษะการเขียนโปรแกรมคอมพิวเตอร์ ระดับ ปวช. ประเภททีม</h3>
+                        <p>
+                            📢 วันพฤหัสบดีที่ 10 พฤศจิกายน 2565 ณ วิทยาลัยเทคนิคนครศรีธรรมราช นายสายันต์ แสงสุริยันต์ ผู้อำนวยการวิทยาลัยอาชีวศึกษานครศรีธรรมราช ร่วมเป็นกำลังใจ ให้ครูผู้ควบคุมการแข่งขัน และตัวแทนนักเรียน แผนกวิชาเทคโนโลยีสารสนเทศ วิทยาลัยอาชีวศึกษานครศรีธรรมราช ในการเข้าร่วมการแข่งขันทักษะการเขียนโปรแกรมคอมพิวเตอร์ ระดับ ปวช. ประเภททีม ระดับอาชีวศึกษาจังหวัดนครศรีธรรมราช ประจำปีการศึกษา 2565
+                        </p>
+            
+                    </div>
+                    <div class="blog-post">
+                        <img src="https://scontent.furt3-1.fna.fbcdn.net/v/t1.15752-9/309406910_435116598782834_5930825958160437405_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeENhmF0F-e03_KOH1bg6HV8cWLAyH-q6LVxYsDIf6rotcYjoHML_7LGgRB8pkOJRM1UajM0YydthuG8dyB4ujJS&_nc_ohc=44Xc4KgPA9YAX_WvoOg&_nc_ht=scontent.furt3-1.fna&oh=03_AdQM2w4E60K4W0Npi-aOACaBNWuWCAL2tRbnsnBhV2_4Rg&oe=63C13D38" alt="">
+                        <h3>ทำความสะอาดเครื่องคอมพิวเตอร์ประจำห้อง523</h3>
+                        <p>
+                            📢วันพุธที่7 กันยายน 2565 นักเรียนระดับชั้นปวช3 แผนกเทคโนโลยีสารสนเทศ ได้ร่วมกันทำความสะอาดเครื่องคอมพิวเตอร์ประจำห้อง523 เพื่อทำความสะอาดฝุ่นและบำรุงรักษาอุปกรณ์ให้อยู่ในสภาพที่พร้อมใช้งาน
+                        </p>
+                        
+                    </div>
+                    <div class="blog-post">
+                        <img src="https://scontent.furt3-1.fna.fbcdn.net/v/t1.15752-9/312343666_636016531354274_5594659879662599271_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeE7LIHkGm-Da2sZwMsPPFKc5bG1_e1XxDHlsbX97VfEMTGQHykLlBBBc20sbJKKV1043Ecm3JpwFJY3ahFolTV9&_nc_ohc=QEnklJkmY6IAX9RFIJu&tn=wE9hWGopTuugb06v&_nc_ht=scontent.furt3-1.fna&oh=03_AdQZQcVtPcj1GLOVnz3JyJSUlItEQAzBzKDp4qMYxGpT3A&oe=63C16528" alt="">
+                        <h3>IT จิตอาสาพฒนาวัด ณ วัดประดู่พฒนาราม</h3>
+                        <p>
+                            📢 แผนกเทคโนโลยีสาระสนเทศได้จัดโครงการ IT จิตอาสาพฒนาวัด ณ วัดประดู่พฒนาราม ได้จัดขึ้นเมื่อวันอาทิตย์ที่ 21 สิงหาคม 2565 โดยมีคณะครูและนักเรียนนักษาแผนกเทคโนโลยีสาระสนเทศได้ร่วมกันทำความสะอาด
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!--    Blog Section     -->
+
+    <!--    CTA  Section    -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-con">
+                <div class="cta-title">
+                    <p>
+                        
+                        เทคโนโลยี+สารสนเทศ=(เทคโนโลยีสารสนเทศ) หมายถึง <br/>
+                        <br/>
+                        การนำเอาความรู้ด้านวิทยาศาสตร์มาสร้างมูลค่าเพิ่มให้กับสารสนเทศ โดยอาศัยเทคโนโลยีทางด้านคอมพิวเตอร์และอุปกรณ์รอบข้าง วิธีการดำเนินการและขั้นตอนต่างๆ ที่เกี่ยวข้องเช่น 
+                        
+                        กรรมวิธีการดำเนินการเพื่อให้เกิดประโยชน์มากที่สุด
+                        ข้อมูล
+                        บุคลากร
+                        ซอฟต์แวร์
+                        ทั้งนี้เทคโนโลยีสารสนเทศยังรวมไปถึงการใช้เทคโนโลยีด้านต่างๆ เช่น ส่งต่อ ใช้งาน จัดเก็บ รวบรวม และสื่อสารระหว่างกันเป็นต้น
+                    </p>
+                </div>
+                <div class="cta-btn"> 
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    CTA  Section    -->
+
+    <!--    Pricing  Section    -->
+    <section class="pricing">
+        <div class="container">
+            <div class="pricing-con">
+                <div class="pricing-title">
+                    <h3>การศึกษา</h3>
+                   
+                </div>
+                <div class="pricing-box">
+                    <div class="pricing-info">
+                        <i class="bi bi-book-half"></i>
+                        <h3>เนื้อหาการเรียน</h3>
+                        <h4>แผนกวิชาเทคโนโลยีสารสนเทศเรียนอะไรบ้าง?</h4>
+                        <a href="content.html" class="pricing-btn">เพิ่มเติม</a>
+                    </div>
+                    <div class="pricing-info">
+                        <i class="bi bi-briefcase-fill"></i>
+                        <h3>อาชีพ</h3>
+                        <h4>เรียนจบแผนกวิชาเทคโนโลยีสารสนเทศทำอาชีพอะไรได้บ้าง?</h4>
+                        <a href="occupation.html" class="pricing-btn">เพิ่มเติม</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    Pricing  Section    -->
+
+    <!--    Services  Section    -->
+    <section class="services">
+        <div class="container">
+            <div class="services-title">
+                <h3>ผลงานนักศึกษา</h3>
+            </div>
+            <div class="services-con">
+                
+                <div class="services-items">
+                    <div class="services-icon">
+                       
+                    </div>
+                    <div class="services-info">
+                        <img src="https://scontent.furt3-1.fna.fbcdn.net/v/t1.15752-9/319907821_5839615712794381_136991715438627763_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHD1giEmJd-PIBWLLqptdpuGQtVgLWG2pkZC1WAtYbamVZu99uBZ_bDtMj8xjmok9ax7NgE0ZAM4drpO-NFsFF3&_nc_ohc=aaJhaPWckOwAX-aXlux&_nc_ht=scontent.furt3-1.fna&oh=03_AdRpgrRMIvBTuRHJYE-xrYHR59U3iOb-oQAvXCVNBx8rSw&oe=63CBD365" alt="">
+                        <p>🖥🥈รางวัลรองชนะเลิศ อันดับ 1 "ทักษะการเขียนโปรแกรมคอมพิวเตอร์ ระดับ ปวช. ประเภท ทีม" ในงานประชุมองค์การนักวิชาชีพในอนาคตแห่งประเทศไทย การแข่งขันทักษะวิชาชีพและทักษะพื้นฐาน ระดับภาค ภาคใต้ ครั้งที่ 33 ประจำปีการศึกษา 2565 ณ จังหวัดชุมพร</p>
+                    </div>
+                </div>
+                <div class="services-items">
+                    <div class="services-icon">
+                    
+                    </div>
+                    <div class="services-info">
+                        <img src="https://scontent.furt3-1.fna.fbcdn.net/v/t1.15752-9/320105294_678741487137581_7765287650182033861_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHv5f2e-Gq8IVFtAfoUUl9mqftplz_L5KWp-2mXP8vkpU5B-MSV3EuYlyFrCG8SE7fUzuAV639KEK20NrhWJ2ng&_nc_ohc=yNDNUi19qkMAX8PtYiX&_nc_ht=scontent.furt3-1.fna&oh=03_AdQ-n63rVWeVNUtJIx7fI5yabDBzhD-HQSYtZMYH_j0OJQ&oe=63CBD286" alt="">
+                        <p>🎙🥉รางวัลรองชนะเลิศ อันดับ 2 "การประกวดร้องเพลงไทยลูกทุ่ง ชาย" ในงานประชุมองค์การนักวิชาชีพในอนาคตแห่งประเทศไทย การแข่งขันทักษะวิชาชีพและทักษะพื้นฐาน ระดับภาค ภาคใต้ ครั้งที่ 33 ประจำปีการศึกษา 2565 ณ จังหวัดชุมพร</p>
+                    </div>
+                </div>
+                <div class="services-items">
+                    <div class="services-icon">
+                    
+                    </div>
+                    <div class="services-info">
+                        <img src="https://scontent.furt3-1.fna.fbcdn.net/v/t1.15752-9/320254877_1919770845082877_4886744653676709601_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeF90PF6bTkFhJXp8syWuy-_bzJCMzOptkpvMkIzM6m2SiBOEY6nGruniayxnI0kzwKihwx3Vh7KJ-1MBlOQKNnF&_nc_ohc=Pi7aP1A-DBgAX_VIf6V&_nc_ht=scontent.furt3-1.fna&oh=03_AdSO5IhImQSSS7IyZCsIoDkaV32DRwcXsdH2uFQAJ8IW5Q&oe=63CBDC19" alt="">
+                        <p>🔊 วันพฤหัสบดีที่ 10 พฤศจิกายน 2565 ณ วิทยาลัยเทคนิคนครศรีธรรมราช นายสายันต์ แสงสุริยันต์ ผู้อำนวยการวิทยาลัยอาชีวศึกษานครศรีธรรมราช ร่วมเป็นกำลังใจ ให้ครูผู้ควบคุมการแข่งขัน และตัวแทนนักเรียน แผนกวิชาเทคโนโลยีสารสนเทศ วิทยาลัยอาชีวศึกษานครศรีธรรมราช ในการเข้าร่วมการแข่งขันทักษะการเขียนโปรแกรมคอมพิวเตอร์ ระดับ ปวช. ประเภททีม ระดับอาชีวศึกษาจังหวัดนครศรีธรรมราช ประจำปีการศึกษา 2565</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    Services  Section    -->
+
+    <!--    Footer  Section    -->
+    <footer>
+        <div class="container">
+            <div class="footer-con">
+                <div class="footer-items">
+                    <img src="https://scontent.furt3-1.fna.fbcdn.net/v/t1.15752-9/320660301_1133826393999279_4528453739633429675_n.png?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeEpFkTnXmKwxzOKAo53W8wUXGRQ1M1sdadcZFDUzWx1pzprSXmcldr_ihr1shRIhxugm-P2l0AZGVWHLWW_C_ia&_nc_ohc=fFyP7Fb60_AAX-H8Xtr&_nc_ht=scontent.furt3-1.fna&oh=03_AdTC6_S4gZ-ll4B58hHR-nY_4SpjxbAqvvWuhMaaRGcrRw&oe=63CBFF90" alt="">
+                </div>
+                <div class="footer-items">
+                    <h3>ช่องทางการติดต่อ</h3>
+                    <ul>
+                        <li><i class="bi bi-house-door"></i>    วิทยาลัยอาชีวศึกษานครศรีธรรมราช  
+                            ที่ตั้ง  เลขที่  1076  ถนนราชดำเนิน  ตำบลคลัง อำเภอเมือง  จังหวัดนครศรีธรรมราช   
+                            รหัสไปรษณีย์ 80000 </li>
+                        <li><i class="bi bi-envelope"></i>  nakhons@nvc.ac.th</li>
+                        <il><i class="bi bi-telephone-fill"></i> 0-7535-6156 , 0-7534-2371</il>
+                        <li><i class="bi bi-browser-chrome"></i>  www.nvc.ac.th</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--    Footer  Section    -->
+</body>
+</html>

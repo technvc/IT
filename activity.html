@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>แผนกเทคโนโลยีสารสนเทศ</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Athiti', sans-serif;
+            
+        }
+         /*-----   Nav Section  -----*/
+         nav {
+        background-color:#996633;
+        color: #fff;
+        height: 80px;
+    }
+    .nav-con {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        align-items: center;
+    }
+    .menu li{
+        list-style: none;
+        background-color: #996633;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-size: 1.1em;
+        line-height: 40px;
+        text-align: left;
+    }
+    .menu a{
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        padding-left: 15px;
+        border-bottom: 1px solid #888;
+        transition: .3s;
+    }
+    .menu a:hover{
+        background-color: #CC9966;
+    }
+    .menu li ul{
+        font-size: .8em;
+    }
+    
+    @media screen and  (min-width: 650px) {
+        .menu li {
+            width:  130px;
+            border-bottom: none;
+            height: 50px;
+            line-height: 50px;
+            font-size: 0.px;
+            display: inline-block;
+            margin-right: -4px;
+        }
+        .menu a {
+            border-bottom: none;
+        }
+        .menu >  li {
+            text-align: center;
+        }
+        .menu > li > a{
+            padding-left: 0;
+        }
+        .menu li ul {
+            position: absolute;
+            display: none;
+            width: inherit;
+        }
+        .menu li:hover ul{
+            display: block;
+        }
+        .menu li ul li {
+            display: block;
+        }
+
+    }
+    /*-----   Nav Section  -----*/
+    .cone{
+        background-color: #f2e4ae;   
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: px;
+    }
+    .grid-items {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #fff;
+        transition: .3s ease;
+    } 
+    .border-img {
+        width: 100%;
+        height: 180px;
+    }
+    .border-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .grid-items h2:first-child {
+        transition: .3s ease;
+        color: #E0FFFF;
+        border-bottom: 2px solid #996633;
+        width: fit-content;
+        padding-bottom: 20px;
+        margin-top: 10px;
+        
+    }
+    .grid-items h2.title {
+        height: px;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        margin-bottom: 25px;
+        overflow: hidden;
+        color: #fff;
+        transition: .3s ease;
+    }
+    .grid-items:hover {
+        background: #888;
+    }
+    .grid-items:hover h2:first-child {
+        color: #996633;
+    }
+    @media screen and (max-width:768px) {
+        .grid-container {
+            grid-template-columns: auto auto;
+        }
+    }
+    @media screen and (max-width:468px) {
+        .grid-container {
+            grid-template-columns: auto;
+        }
+    }
+    
+    </style>
+</head>
+<body>
+     <!--    Nav Section     -->
+<nav>
+    
+    <div class="container">
+        <div class="nav-con">
+            <div class="logo"></div>
+                <h3>Information Technology</h3>
+            <ul class="menu">
+                <li><a href="information.html">หน้าแรก</a></li>
+                <li><a href="personnel.html">บุคลากร</a></li>
+                <li><a href="#">หลักสูตร</a>
+                    <ul>
+                        <li><a href="#">หลักสูตรชั้น ปวช.</a></li>
+                        <li><a href="#">หลักสูตรชั้น ปวส.</a></li>
+                    </ul>
+                </li>
+                <li><a href="activity.html">กิจกรรม</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--    Nav Section     -->
+<section class="cone">
+    <div class="grid">
+
+        <!-- items 1 -->
+        <a href="#" class="grid-items">
+            <h2>1</h2>
+            <h2 class="title">โครงการ เก็บกวาดวัดสะอาด คนสดใส ปลอดภัย ไร้มลพิษ<br/>
+                จะจัดกิจกรรมในวันเสาร์ที่ 7 มกราคม 2566<br/>
+                เวลา08:30-12:00น.<br/>
+                ณ.วัดประดู่พัฒนาราม</h2>
+                <div class="border-img">
+                    <img src="https://scontent.furt3-1.fna.fbcdn.net/v/t1.15752-9/322656933_573426237574722_8922527028378908974_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHX04HF5tYBFmJbkhmoDu0Dr16Q5MazeMyvXpDkxrN4zBAEBaLiF4Vkdgz-xufOMhXWsp4Vd6-uT8EU4ef-WQ3a&_nc_ohc=wMWBCsUvRLAAX-Yq6pJ&tn=Kf2kLI-qKwy9_FOW&_nc_ht=scontent.furt3-1.fna&oh=03_AdStHbwC6gxtxgu1RrxuR0MlwioafEioGIli62Ooo2qMjQ&oe=63E53207">
+                </div>
+        </a>
+
+        <!-- items 2 -->
+        <a href="#" class="grid-items">
+            <h2>2</h2>
+            <h2 class="title">🔈 ในวันจันทร์ที่ 19 กันยายน 2565 <br/>
+                แผนกเทคโนโลยีสารสนเทศพร้อมอาจารย์ผู้สอนได้จัดบูธจัดแสดง ณ สวนสมเด็จพระศรีนครินทร์ 84 (ทุ่งท่าลาด) <br/>
+                ในงาน “บุญสารทเดือนสิบ เสน่ห์วันวานที่คิดถึง”</h2>
+                <div class="border-img">
+                    <img src="https://scontent.furt3-1.fna.fbcdn.net/v/t1.15752-9/324579766_692183609020405_4005199035072332538_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeFKS919wq6ureASNf046L4621WbdOtaHHrbVZt061ocegGjHaLW8a2ITwKaR12T0s1DTShCXffXL__CooXUJUBa&_nc_ohc=aRRZ2hl2e0MAX_KSKv_&tn=Kf2kLI-qKwy9_FOW&_nc_ht=scontent.furt3-1.fna&oh=03_AdSTEZrVZ-wX-S63P9CzYG2n8avKju5nsAx_4zOyMxvqBQ&oe=63E4FEAD">
+                </div>
+        </a>
+
+        <!-- items 3 -->
+        <a href="#" class="grid-items">
+            <h2>3</h2>
+            <h2 class="title">🔈วันพุธที่7 กันยายน 2565 <br/>
+                นักเรียนระดับชั้นปวช3 แผนกเทคโนโลยีสารสนเทศ ได้ร่วมกันทำความสะอาดเครื่องคอมพิวเตอร์ประจำห้อง523 <br/>
+                เพื่อทำความสะอาดฝุ่นและบำรุงรักษาอุปกรณ์ให้อยู่ในสภาพที่พร้อมใช้งาน</h2>
+                <div class="border-img">
+                    <img src="https://scontent.furt3-1.fna.fbcdn.net/v/t1.15752-9/324939794_643798354170632_5887620417473498967_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeExk-Q9uPMZJIFf5AWvn6d_pbT_EeN1KC2ltP8R43UoLTvWkau20lMazlUAE6TfzMy09j-pZDJlxuHGRNVU32SQ&_nc_ohc=kRwtaik0x-AAX9r80bk&tn=Kf2kLI-qKwy9_FOW&_nc_ht=scontent.furt3-1.fna&oh=03_AdQTU8cwQz676tQHwIYahfZl3kyGb8XQTEZoaI9JcjtSgw&oe=63E52BEF">
+                </div>
+        </a>
+
+        <!-- items 4 -->
+        <a href="#" class="grid-items">
+            <h2>4</h2>
+            <h2 class="title">📢 แผนกเทคโนโลยีสาระสนเทศได้จัดกิจกรรมเปิดท้ายขายของ <br/>
+                ซึ่งเป็นส่วนหนึ่งของรายวิชาธุรกิจทางด้านเทคโนโลยีสารสนเทศ <br/>
+                จัดขึ้นในวันศุกร์ ที่19 สิงหาคม 2565 เวลา 11:00-14:00 <br/>
+                ณ หน้าแผนกเทคโนโลยีสารสนเทศ อาชีวศึกษานครศรีธรรมราช</h2>
+                <div class="border-img">
+                    <img src="https://scontent.furt3-1.fna.fbcdn.net/v/t1.15752-9/324864432_708160450842386_6116793082083730449_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHGHU1lMYQaNro2WiWRpmZcfmkhC8hxtgh-aSELyHG2CBSswZso1w6b5aS9AbzkECXogSHvXvE8DJQJw6q474vI&_nc_ohc=PrCm2rnTE0kAX-QQJzg&_nc_ht=scontent.furt3-1.fna&oh=03_AdQ4U523EN1-3dgoIV6dGrBCJQHV5odoX1Jz_GkxMpd9Hw&oe=63E50DE0">
+                </div>
+        </a>
+
+        <!-- items 5 -->
+        <a href="#" class="grid-items">
+            <h2>5</h2>
+            <h2 class="title">การนำเสนอโปรเจค <br/>
+                ของนักเรียนชั้น ปวช.3 และ ปวส.2</h2>
+                <div class="border-img">
+                    <img src="https://scontent.furt3-1.fna.fbcdn.net/v/t1.15752-9/320451898_1189918861944077_8920833882813400424_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeF7idI6-EU4QQ9iSJ1wr9ONQ-PKGH4bnypD48oYfhufKiJOOprKapa0dy_gX0zsFgTBvxPBCgYvC2L7Gv0ibcng&_nc_ohc=l8Pq-i3fnyIAX8123D2&tn=Kf2kLI-qKwy9_FOW&_nc_ht=scontent.furt3-1.fna&oh=03_AdTJmaIDVEDWfp0msiXUYU35ZjrKX1KazfUucqInCCo9HA&oe=63E50ADF">
+                </div>
+        </a>
+
+        <!-- items 6 -->
+        <a href="#" class="grid-items">
+            <h2>6</h2>
+            <h2 class="title">การประชุมแผนกและจับพี่รหัส</h2>
+                <div class="border-img">
+                    <img src="https://scontent.furt3-1.fna.fbcdn.net/v/t1.15752-9/324595288_705414300934924_5109067366034780639_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeFmPFLLyhisk868ivcmVH0g79G1qaMV7xDv0bWpoxXvEKZNDM_n6Y9YvGHZc9iMu5mFCblZzh_YV4GYnbLUeeEx&_nc_ohc=2k3gor_vENwAX_eYbWa&tn=Kf2kLI-qKwy9_FOW&_nc_ht=scontent.furt3-1.fna&oh=03_AdSWgHcferlAWH5Pb77ySq1g7P2gjyajaemthGqwWUyKPA&oe=63E506C5">
+                </div>
+        </a>
+    </div>
+</section>
+</body>
+</html>
